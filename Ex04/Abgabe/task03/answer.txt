@@ -1,0 +1,26 @@
+##################
+# REPORT Task 03 #
+##################
+
+## What is the output of the following program? What is the error in the program?
+
+1.1) Output: 
+	top = 1, bottom = 42
+
+1.2) Error:
+	Der Fehler liegt in der condition "i <= 5" der for-Schleife. Da Das Array 'arr' von struct s
+        mit einer Länge von 5 instanziert wird, sollte die Abbruchbedingung der for-Schleife
+	"i < 5" sein. Nun geht die Schleife eine Iteration zu weit und überschreibt nun den  
+        Wert von 'bottom' von struct s mit dem Wert 42, da 'bottom' nach 'arr' deklariert wird.  
+
+
+## Describe how you use gdb to find the error but without single steps (commands “n(next)” or “s(tep)”)!       Include all gdb commands in your report.      
+
+2.1) Breakpoint an Zeile 22 mit "b 22",
+     das Programm mit "r" starten,
+     nun lässt man sich den Wert von i ausgeben mit "print i" welcher 0 ist,
+     nun wiederholt man die Schleifenausführung mit "n" und das Printen von i bis i = 5 ist und der           Debugger in die Überprüfung der Schleifenabbruchbedingung (Zeile 21) springt,
+     nun lässt man sich den Wert von "s.bottom" mit "p s.bottom" ausgeben, welcher nun auch 42 ist.
+     Danach lässt man das Programm mit "c" bis zum Ende weiterlaufen.
+
+

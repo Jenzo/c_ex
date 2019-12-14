@@ -1,0 +1,11 @@
+##################
+# REPORT Task 02 #
+##################
+
+
+## Warum funktioniert die Lösung?
+
+Es wird eine Klasse Ex erstellt mit einem Standard-Konstruktor und einem Destructor
+Es wird dann ein globales Object 'ex' vom Typ 'Ex' vor der main-Methode erstellt, wodurch der Standard-Konstruktor aufgerufen wird -> es entsteht also die erste Zeile "---start---".
+Danach wird die main-Methode durchlaufen und "Hello world!" geschrieben.
+Anschließend wirdd mit der Terminierung des Programmes automatisch der Deconstructor von Ex aufgerufen, wodurch die letzte Zeile -> "---end---" geschrieben wird. 

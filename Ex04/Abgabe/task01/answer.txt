@@ -1,0 +1,33 @@
+##################
+# REPORT Task 01 #
+##################
+
+## What are the advantages and disadvantages of the macro and function solutions?
+
+Vorteile Macro:
+1.1) Reduzierung von Code-Duplikaten, da auf Typen verzichtet wird (reine Textersetzung)   	  
+
+Nachteile Macro:
+2.1) Nichtgesetze Klammern bei arithmetischen Operationen führen zu falschen Ergebnissen
+
+Vorteile Funktionen:
+3.1) Typechecking möglich
+
+Nachteile Funktionen:
+4.1) Duplizierter Code mit der selben Vergleichslogik -> Mehraufwand
+4.2) Bei gemischten Übergabetypen (siehe auch Punkt 5.1) ist eine einfach Ausführung wie bei der Macro-          Lösung nicht möglich.
+
+
+## Why does the commented line in the code not compile?
+
+5.1) Der Compiler kann nicht entscheiden, welche Methode er aufrufen soll, da 2 Methoden zur Auswahl             stehen. Es wäre möglich, die Parameter als int zu interpretieren und dann maxf(int, int) aufzurufen
+     oder die Parameter als double zu interpretieren und dann maxf(double, double) aufzurufen.
+     Bevor dieses Problem nicht gelöst ist, kann der Compiler das Programm nicht kompilieren.
+
+
+## Which maxf() functions are called for the maxf1-maxf3 outputs and why?
+
+6.1) maxf1 : int-Varinte, da beide Parameter vom Typ int sind.
+6.2) maxf2 : double-Variante, da a und b zwar vom Typ int sind aber durch die Addition mit +0.1 bzw. +0.2
+             als double interpretiert werden und somit die double-Variante aufgerufen wird.
+6.3) maxf3 : int-Variante, da beide Parameter a und b vom Typ int sind. 

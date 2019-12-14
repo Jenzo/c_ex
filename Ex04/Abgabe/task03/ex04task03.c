@@ -1,0 +1,29 @@
+/*
+ * main.c
+ *
+ *  Created on: 20.11.2019
+ *      Author: Jens
+ */
+
+#include <stdio.h>
+
+int main(void) {
+  struct stest {
+    int top;
+    int arr[5];
+    int bottom;
+  } s;
+  int i;
+
+  s.top = 1;
+  s.bottom = 2;
+
+  for (i = 0; i <= 5; i++) {
+    s.arr[i] = 42;
+  }
+
+  printf("top = %d, bottom = %d\n", s.top, s.bottom);
+}
+
+
+

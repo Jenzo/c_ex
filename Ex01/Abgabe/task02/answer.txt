@@ -1,0 +1,17 @@
+######################
+# REPORT EX01 TASK02 #
+######################
+
+The internal cube storage structure:
+
+Die interne Speicherallokierung von 'cubes' erfolgt hier nach dem 'row-major order'
+Prinzip, d.h. die Speicherallokierung erfolgt reihenweise für jede 2-dimensionale Matrize
+eines 'cubes'. Für jedes gepeicherte int werden 4 Bytes im Speicher allokiert und sequenziell
+mit aufsteigendem Index der Dimensionen des 'cubes' in den Speicher geschrieben. Nicht initialisierte
+Werte des 'cubes' werden mit 0 initialisiert, sodass für spätere Zuweisungen oder Abrufe von Werten 
+die Speicheradresse zur Verfügung steht.    
+
+  
+
+
+

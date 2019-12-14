@@ -1,0 +1,17 @@
+##################
+# REPORT Task01 #
+##################
+
+Output bei Ausführung des Original-Codes Output: globalvar = 1073741824
+
+Als Output würde man 1 erwarten, da globalvar in der Datei "scope1.c" definiert wird (file scope).
+Jedoch wird in der scope2.c eine weitere Variable globalvar geschrieben, aber nicht instanziiert.
+Der Compiler wird nun das "starke Symbol", d.h. das Instanziierte nehmen und an den assembler senden. 
+Das Problem ist nun, dass die Zuweisung x = 2 in der modtest() zur Laufzeit passiert und nun
+als globalvar der Wert 2 als float zugewiesen bekommt und nun der Wert als float-Repräsentation im Speicher landet.
+In der printf() Methode wird als Parameter "%d" eine Dezimalzahl erwartet und so wird globalvar als int
+interpretiert. Als Hexadezimal gelesen beträgt der Wert nun 0x40000000 was als Dezimalwert der 1073741824 entspricht.
+
+Man kann das Flag "-fno-common" im Compile-Befehl setzen, um so während der Compile-Zeit über doppelt-deklarierte
+globale Variablen gewarnt zu werden. 
+ 

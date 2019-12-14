@@ -1,0 +1,19 @@
+##################
+# REPORT Task 02 #
+##################
+
+Why is it better to use pre-increment/pre-decrement instead of post-increment/post-decrement operators?
+
+Man sollte sich aber der unterschiedlichen Wirkungsweise der beiden Operator-Arten beweusst sein.
+Der prefix-Operator verändert den Wert bereits vor der Ausführung.
+Der postfix-Operator erst nach der Ausführung.
+
+Für eine bessere Leserlich- und damit einhergehende Verständlichkeit von Code,
+sollte eher die prefix-Variante vorgezogen werden, da eine postfix-Operation bereits
+viel weiter vorher im Code passiert sein kann, als man erwartet. Sollte sich nun eine Programmstelle nicht
+verhalten wie man erwartet, so lässt sich die Fehlerursache (eventuell eine vorherige postfix-Operation)
+viel schlechter feststellen.
+
+Die präfix-Operation passiert jedoch adhoc und kann dadurch viel besser nachvollzogen werden.
+Deshalb sollte die präfix-Variant vorgezogen werden.
+ 

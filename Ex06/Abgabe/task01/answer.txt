@@ -1,0 +1,13 @@
+##################
+# REPORT Task 01 #
+##################
+
+Why is it not necessary to overload comparison operators to compare two MyTime objects?
+
+-> Wenn man den int-cast Operator für die Klasse MyTime überladt,
+   wird nun dieser cast herangezogen, sodass bei Vergleichsoperationen die 
+   MyTime Objekte vorher in ints gecastet werden. Und deshalb können die Objekte miteinander
+   verglichen werden, da sie nun als primitive Datentypen vom Compiler gecastet und verglichen werden. 
+
+
+ 

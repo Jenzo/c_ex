@@ -1,0 +1,10 @@
+##################
+# REPORT Task03 #
+##################
+
+Wenn man bei der Verwendung von scanf() vergisst, die Begrenzung der Länge für die Zeichenkette zu setzen, dann
+kann dies zu Problemen führen, wenn man mehr Zeichen eingibt, als Platz für das Array reserviert wurde.
+Das Problem wir allgemein als Pufferüberlauf bezeichnet. Es führt dann zum Absturz des Programms.
+Ausserdem ist scanf() beschränkt was die Eingabe von Leerzeichen zwischen den Strings angeht. 
+scanf() kann keine Strings mit enthaltenen Leerzeichen einlesen und bricht dann ab.
+Somit müsste man für die geforderte Eingabe mehrere scanf() hintereinander aufrufen.

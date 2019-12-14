@@ -1,0 +1,18 @@
+########################
+# REPORT EX01 TASK 01 ##
+########################
+
+OS: Windows 10 64-bit version
+compiler: GCC (MinGW.org GCC-8.2.0-5) 8.2.0
+
+output: 
+
+char 1
+short 2
+int 4
+long 4
+long long 8
+float 4
+double 8
+long double 12
+pointer 4

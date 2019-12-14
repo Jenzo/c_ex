@@ -1,0 +1,6 @@
+Unterschiede C/C++ zu Java:
+	+ automatische Speicherverwaltung in Java
+	+ Java benötigt eine JVM - C/C++ sind plattformunabhänging
+	+ C/C++ besitzt Pointers - Java hingeben nicht 
+	+ Java arbeitet mit Threads - C/C++ nicht
+	+ C/C++ ermöglichen Mehrfachvererbung - in Java nicht möglich (nur durch Interfaces realisierbar)

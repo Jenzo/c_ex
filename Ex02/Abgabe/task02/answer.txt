@@ -1,0 +1,15 @@
+##################
+# REPORT Task02 #
+##################
+
+1.) int (*x[])(int, int)
+	x is an array of pointers to functions excepting (int, int) and returning an int
+
+2.) int *(*x(int*))() 
+	x is a function excepting (*int) and returing a pointer to a function returing an int pointer
+
+3.) int *(*(*x())[])(int)
+	x is a function returning a pointer to an array of pointers to functions excepting (int) returning an int pointer
+
+4.) int (*x)(int *(*)(int))
+	x is a pointer to a function excepting an int pointer to a function excepting an pointer returning a pointer to a         	function returning an int
