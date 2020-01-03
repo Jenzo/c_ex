@@ -1,3 +1,47 @@
 ##################
-# REPORT Task<#> #
+# REPORT Task 2 #
 ##################
+
+measurements task02:
+
+My computer requires 122 seconds to execute StaticBse::myFunc() 50000000 times                                          My computer requires 140 seconds to execute pure.myFunc() 50000000 times                                                My computer requires 168 seconds to execute ppure->myFunc() 50000000 times                                              My computer requires 138 seconds to execute vder.myFunc() 50000000 times                                                My computer requires 157 seconds to execute pvder->myFunc() 50000000 times                                              My computer requires 156 seconds to execute vbase.nvFunc() 50000000 times                                               My computer requires 144 seconds to execute vder.nvFunc() 50000000 times                                                My computer requires 153 seconds to execute pvbase->nvFunc() 50000000 times                                             My computer requires 177 seconds to execute pvder->nvFunc() 50000000 times                                              My computer requires 155 seconds to execute pvbaseder->nvFunc() 50000000 times                                          My computer requires 144 seconds to execute vbase.virtFunc() 50000000 times                                             My computer requires 140 seconds to execute vder.virtFunc() 50000000 times                                              My computer requires 166 seconds to execute pvbase->virtFunc() 50000000 times                                           My computer requires 169 seconds to execute pvder->virtFunc() 50000000 times                                            My computer requires 172 seconds to execute pvbaseder->virtFunc() 50000000 times  
+
+
+Wie man sehen kann, ist die Ausführung der statischen Methode am schnellsten.
+Es kann beobachtet werden, dass die Ausführung einer gleichen Funktion mit der Instanz einer 
+Klasse um ca. 20% schneller durchgeführt wird, als mit dem Pointer auf diese Klasse.
+Ausserdem lässt sich erkennen, dass der letzte Funktionsaufruf von pvbaseder->virtFunc()
+am längsten braucht. generell brauchen die Aufrufe der rituellen Methoden etwas mehr Zeit,
+da der Compiler nicht weiss, welche Funktion er aufrufen soll. Deshalb muss er erst die
+richtige Addresse der Funktion im Speicher herauskriegen, was Zeit kostet.
+
+
+
+##################
+# REPORT Task 3 #
+##################
+
+measurements task 03:
+
+My computer requires 143 seconds to execute dynamic cast 50000000 times                                       
+My computer requires 132 seconds to execute static cast 50000000 times  
+
+Wie man sieht ist der statische cast schneller, da beim dynamic cast noch zusätzlich ein lookup gemacht wird,
+ob der cast legal ist.
+Allerdings ist einer der Nachteiler, dass der static cast zwar zur Compilezeit keine
+Fehler wirft, jedoch erst zur Laufzeit Fehler auftreten auftreten können.
+Man sollte den static cast nur verwenden, wenn man sich sicher ist, dass der cast legal ist.
+Falls die abgeleitete Klasse und die Basisklasse nicht wirklich zusammenpasse, wird der cast trotzdem
+vollzogen und es kann zum Datenverlust kommen und der cast verliert seine eigentliche Wirkung. 
+
+ 
+
+
+
+
+
+
+
+
+
+
